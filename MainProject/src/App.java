@@ -1,13 +1,11 @@
+
+import javax.swing.JOptionPane;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        
-        String saludar = "Bienvenido!";
-        System.out.println(saludar);
-        System.out.println("saludar.toUpperCase() = " + saludar.toUpperCase());
 
-
-        int numero = 10;
+        String numeroString = JOptionPane.showInputDialog(null, "Ingrese un numero entero:");
+        int numero = Integer.parseInt(numeroString);
         System.out.println("numero = " + numero);
-        boolean valor = true;
     }
 }
